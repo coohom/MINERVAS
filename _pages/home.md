@@ -15,9 +15,9 @@ permalink: /
       Hao Zhang<sup>1</sup>,
       <a href="https://bertjiazhe,ng.github.io/">Jia Zheng</a><sup>2</sup>,
       Jiaxiang Zheng<sup>2</sup>,
-      <a href="http://scholar.google.com/citations?user=dwvfKSkAAAAJ&hl=en">Rui Tang</a><sup>1</sup>,
-      <a href="http://www.cad.zju.edu.cn/home/rwang/">Rui Wang</a><sup>2</sup>,
-      <a href="http://www.cad.zju.edu.cn/home/bao/">Hujun Bao</a><sup>2</sup>,
+      <a href="http://scholar.google.com/citations?user=dwvfKSkAAAAJ&hl=en">Rui Tang</a><sup>2</sup>,
+      <a href="http://www.cad.zju.edu.cn/home/rwang/">Rui Wang</a><sup>1</sup>,
+      <a href="http://www.cad.zju.edu.cn/home/bao/">Hujun Bao</a><sup>1</sup>
     </center>
     <center>
       <sup>2</sup>State Key Laboratory of CAD &amp; CG, Zhejiang University,
