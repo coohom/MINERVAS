@@ -1,0 +1,33 @@
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="keywords" content="computer vision, computer graphics, visual learning, robotics, machine learning">
+
+  <title>{{ page.urltitle }}</title>
+  <meta name="description" content="">
+
+  <!--Open Graph Related Stuff-->
+  <meta property="og:title" content="MINERVAS"/>
+  <meta property="og:url" content="https://coohom.github.io/MINERVAS"/>
+  <meta property="og:description" content=""/>
+  <meta property="og:site_name" content="MINERVAS"/>
+  <meta property="og:image" content=""/>
+  <meta property="og:image:url" content=""/>
+
+  <!--Twitter Card Stuff-->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="MINERVAS System"/>
+  <meta name="twitter:image" content="https://coohom.github.io/MINERVAS/static/img/teaser.png">
+  <meta name="twitter:url" content="https://coohom.github.io/MINERVAS"/>
+  <meta name="twitter:description" content=""/>
+
+  <!-- CSS  -->
+  <link rel="stylesheet" type="text/css" href="{{ "/static/css/bootstrap.min.css" | prepend:site.baseurl }}">
+  <link rel="stylesheet" type="text/css" href="{{ "/static/css/main.css" | prepend:site.baseurl }}" media="screen,projection">
+
+  {% if site.google_analytics and jekyll.environment == 'production' %}
+    {% include analytics.html %}
+  {% endif %}
+</head>
