@@ -1,6 +1,6 @@
 title: MINERVAS Massive INterior EnviRonments VirtuAl Synthesis
 description: Website for MINERVAS
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/MINERVAS" # the subpath of your site, e.g. /blog
 
 # Build settings
 markdown: kramdown

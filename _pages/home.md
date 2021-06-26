@@ -20,8 +20,8 @@ permalink: /
       <a href="http://www.cad.zju.edu.cn/home/bao/">Hujun Bao</a><sup>1</sup>
     </center>
     <center>
-      <sup>2</sup>State Key Laboratory of CAD &amp; CG, Zhejiang University,
-      <sup>1</sup>Manycore (Kujiale)
+      <sup>1</sup>State Key Laboratory of CAD &amp; CG, Zhejiang University,
+      <sup>2</sup>Manycore (Kujiale)
     </center>
     <center>
       arXiv preprint 2021
