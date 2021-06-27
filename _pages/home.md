@@ -13,18 +13,20 @@ permalink: /
     <center>
       Haocheng Ren<sup>1</sup>,
       Hao Zhang<sup>1</sup>,
-      <a href="https://bertjiazhe,ng.github.io/">Jia Zheng</a><sup>2</sup>,
+      <a href="https://bertjiazheng.github.io/">Jia Zheng</a><sup>2</sup>,
       Jiaxiang Zheng<sup>2</sup>,
       <a href="http://scholar.google.com/citations?user=dwvfKSkAAAAJ&hl=en">Rui Tang</a><sup>2</sup>,
       <a href="http://www.cad.zju.edu.cn/home/rwang/">Rui Wang</a><sup>1</sup>,
       <a href="http://www.cad.zju.edu.cn/home/bao/">Hujun Bao</a><sup>1</sup>
     </center>
+    <br>
     <center>
       <sup>1</sup>State Key Laboratory of CAD &amp; CG, Zhejiang University,
       <sup>2</sup>Manycore (Kujiale)
     </center>
+    <br>
     <center>
-      arXiv preprint 2021
+      <a href='https://arxiv.org/abs/'>arXiv</a> | <a href='TODO'>Supplementary</a> | <a href='https://www.kujiale.com/coohomcloud/minervas'>Online System</a>
     </center>
   </div>
 </div>
