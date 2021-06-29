@@ -11,8 +11,8 @@ permalink: /
   <div class="col-xs-12">
     <center><h2>MINERVAS: Massive INterior EnviRonments VirtuAl Synthesis</h2></center>
     <center>
-      Haocheng Ren<sup>1</sup>,
-      Hao Zhang<sup>1</sup>,
+      Haocheng Ren<sup>1,*</sup>,
+      Hao Zhang<sup>1,*</sup>,
       <a href="https://bertjiazheng.github.io/">Jia Zheng</a><sup>2</sup>,
       Jiaxiang Zheng<sup>2</sup>,
       <a href="http://scholar.google.com/citations?user=dwvfKSkAAAAJ&hl=en">Rui Tang</a><sup>2</sup>,
@@ -26,21 +26,14 @@ permalink: /
     </center>
     <br>
     <center>
+      (*: Equal Contribution)
+    </center>
+    <br>
+    <center>
       <a href='https://arxiv.org/abs/'>arXiv</a> | <a href='TODO'>Supplementary</a> | <a href='https://www.kujiale.com/coohomcloud/minervas'>Online System</a>
     </center>
   </div>
-</div>
-
-<hr>
-
-<!-- <div class="row">
-  <div class="col-md-12">
-    <img src="{{ "/static/img/system.png" | prepend:site.baseurl }}">
-    <p>
-      <center><iframe width="980" height="500" src="TODO" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
-    </p>
-  </div>
-</div><br> -->
+</div><br>
 
 <div class="row" id="news">
   <div class="col-xs-12">
