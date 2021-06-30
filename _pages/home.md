@@ -9,7 +9,10 @@ permalink: /
 <br>
 <div class="row">
   <div class="col-xs-12">
-    <center><h2>MINERVAS: Massive INterior EnviRonments VirtuAl Synthesis</h2></center>
+    <center>
+      <h2>MINERVAS: Massive INterior EnviRonments VirtuAl Synthesis</h2>
+    </center>
+    <br>
     <center>
       Haocheng Ren<sup>1,*</sup>,
       Hao Zhang<sup>1,*</sup>,
@@ -32,6 +35,12 @@ permalink: /
     <center>
       <a href='https://arxiv.org/abs/'>arXiv</a> | <a href='TODO'>Supplementary</a> | <a href='https://www.kujiale.com/coohomcloud/minervas'>Online System</a>
     </center>
+  </div>
+</div><br>
+
+<div class="row">
+  <div class="col-md-12">
+    <img src="{{ "/static/img/teaser.png" | prepend:site.baseurl }}">
   </div>
 </div><br>
 
