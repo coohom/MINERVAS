@@ -7,7 +7,7 @@ permalink: /
 ---
 <style> 
 .center{text-align:center} 
-.mySlides {display:none;}
+/* .mySlides{display:none;} */
 </style> 
 
 <br>
@@ -95,38 +95,55 @@ In this paper, we present MINERVAS, a Massive INterior EnviRonments VirtuAl Synt
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/atom-one-light.min.css">
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/default.min.css"> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+<script>hljs.highlightAll();</script>
 <pre><code class="python">class FurnitureLayoutSampler(SceneProcessor):
   def process(self):
       for room in self.shader.world.rooms:
           room.randomize_layout(self.shader.world)
 </code></pre>
 
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<div class="w3-center w3-content w3-section" style="max-width:500px">
+<link rel="stylesheet" href="{{ '/static/css/w3.css' | prepend:site.baseurl }}">
+<div class="w3-center w3-content w3-section" style="max-width:600px">
   <img class="mySlides" src="{{ '/static/img/samples/Layout_0.jpg' | prepend:site.baseurl }}" style="width:100%">
   <img class="mySlides" src="{{ '/static/img/samples/Layout_1.jpg' | prepend:site.baseurl }}" style="width:100%">
   <img class="mySlides" src="{{ '/static/img/samples/Layout_2.jpg' | prepend:site.baseurl }}" style="width:100%">
   <img class="mySlides" src="{{ '/static/img/samples/Layout_3.jpg' | prepend:site.baseurl }}" style="width:100%">
 </div>
 
+<script type="text/javascript" src="{{ '/static/js/slideshow.js' | prepend:site.baseurl }}"></script>
 <script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2000); // Change image every 2 seconds
-}
+carousel("mySlides", 0);
 </script>
 
+<div class="center">
+  <div class="col-xs-12">
+    <h3>Material sampler</h3>
+  </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/atom-one-light.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+<pre><code class="python">class MaterialSampler(EntityProcessor):
+    def process(self):
+        for instance in self.shader.world.instances:
+            if instance.label_name in ['sofa', 'table']:
+                self.shader.world.replace_material(id=instance.id)
+</code></pre>
+
+<link rel="stylesheet" href="{{ '/static/css/w3.css' | prepend:site.baseurl }}">
+<div class="w3-center w3-content w3-section" style="max-width:600px">
+  <img class="mySlides2" src="{{ '/static/img/samples/Material_4.jpg' | prepend:site.baseurl }}" style="width:100%">
+  <img class="mySlides2" src="{{ '/static/img/samples/Material_6.jpg' | prepend:site.baseurl }}" style="width:100%">
+  <img class="mySlides2" src="{{ '/static/img/samples/Material_7.jpg' | prepend:site.baseurl }}" style="width:100%">
+  <img class="mySlides2" src="{{ '/static/img/samples/Material_8.jpg' | prepend:site.baseurl }}" style="width:100%">
+</div>
+
+<script>
+carousel("mySlides2", 0);
+</script>
+
+<br>
 <div class="row">
   <div class="col-xs-12">
     <h2>Video</h2>
