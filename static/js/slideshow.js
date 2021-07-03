@@ -3,7 +3,6 @@ function carousel(cls_name, myIndex) {
     // var myIndex = 0
     var i;
     var x = document.getElementsByClassName(cls_name);
-    console.log(x)
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "none";  
     }

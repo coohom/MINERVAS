@@ -79,6 +79,19 @@ In this paper, we present MINERVAS, a Massive INterior EnviRonments VirtuAl Synt
   </div>
 </div><br>
 
+<div class="row">
+  <div class="col-xs-12">
+    <h2>Video</h2>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+    <p>
+    Comming soon.
+    </p>
+  </div>
+</div><br>
 
 <div class="row">
   <div class="col-xs-12">
@@ -86,6 +99,7 @@ In this paper, we present MINERVAS, a Massive INterior EnviRonments VirtuAl Synt
   </div>
 </div>
 
+<!-- **** Furniture arrangement sampler *** -->
 <div class="center">
   <div class="col-xs-12">
     <h3>Furniture rearrangment</h3>
@@ -115,6 +129,7 @@ In this paper, we present MINERVAS, a Massive INterior EnviRonments VirtuAl Synt
 carousel("mySlides", 0);
 </script>
 
+<!-- **** Material sampler *** -->
 <div class="center">
   <div class="col-xs-12">
     <h3>Material sampler</h3>
@@ -143,20 +158,97 @@ carousel("mySlides", 0);
 carousel("mySlides2", 0);
 </script>
 
-<br>
-<div class="row">
+<!-- **** Light sampler *** -->
+<div class="center">
   <div class="col-xs-12">
-    <h2>Video</h2>
+    <h3>Light sampler</h3>
   </div>
 </div>
 
-<div class="row">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/atom-one-light.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+<pre><code class="python">class LightSampler(EntityProcessor):
+    def process(self):
+        for light in self.shader.world.lights:
+            light.tune_temp() # randomize color temperature
+            light.tune_intensity() # randomize intensity
+</code></pre>
+
+<link rel="stylesheet" href="{{ '/static/css/w3.css' | prepend:site.baseurl }}">
+<div class="w3-center w3-content w3-section" style="max-width:600px">
+  <img class="mySlides3" src="{{ '/static/img/samples/Light_1.jpg' | prepend:site.baseurl }}" style="width:100%">
+  <img class="mySlides3" src="{{ '/static/img/samples/Light_2.jpg' | prepend:site.baseurl }}" style="width:100%">
+  <img class="mySlides3" src="{{ '/static/img/samples/Light_3.jpg' | prepend:site.baseurl }}" style="width:100%">
+  <img class="mySlides3" src="{{ '/static/img/samples/Light_4.jpg' | prepend:site.baseurl }}" style="width:100%">
+</div>
+
+<script>
+carousel("mySlides3", 0);
+</script>
+
+
+<!-- **** Mesh sampler *** -->
+<div class="center">
   <div class="col-xs-12">
-    <p>
-    Comming soon.
-    </p>
+    <h3>Mesh sampler</h3>
   </div>
-</div><br>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/atom-one-light.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+<pre><code class="python">class ModelSampler(EntityProcessor):
+    def process(self):
+        for instance in self.shader.world.instances:
+            self.shader.world.replace_model(id=instance.id)
+</code></pre>
+
+<link rel="stylesheet" href="{{ '/static/css/w3.css' | prepend:site.baseurl }}">
+<div class="w3-center w3-content w3-section" style="max-width:600px">
+  <img class="mySlides4" src="{{ '/static/img/samples/Model_0.jpg' | prepend:site.baseurl }}" style="width:100%">
+  <img class="mySlides4" src="{{ '/static/img/samples/Model_1.jpg' | prepend:site.baseurl }}" style="width:100%">
+  <img class="mySlides4" src="{{ '/static/img/samples/Model_16.jpg' | prepend:site.baseurl }}" style="width:100%">
+  <img class="mySlides4" src="{{ '/static/img/samples/Model_14.jpg' | prepend:site.baseurl }}" style="width:100%">
+</div>
+
+<script>
+carousel("mySlides4", 0);
+</script>
+
+<!-- **** Depth sampler *** -->
+<div class="center">
+  <div class="col-xs-12">
+    <h3>Depth sampler</h3>
+  </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/atom-one-light.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+<pre><code class="python">class DepthNoiseSample(PixelProcessor):
+    def process(self, noise):
+        # 0: NoNoiseModel
+        # 1: GaussianNoiseModel
+        # 2: PoissonNoiseModel
+        # 3: SaltAndPepperNoiseModel
+        # 4: KinectNoiseModel
+        self.gen_depth(noise=1)
+</code></pre>
+
+<link rel="stylesheet" href="{{ '/static/css/w3.css' | prepend:site.baseurl }}">
+<div class="w3-center w3-content w3-section" style="max-width:600px">
+  <img class="mySlides5" src="{{ '/static/img/samples/depth.jpg' | prepend:site.baseurl }}" style="width:100%">
+  <img class="mySlides5" src="{{ '/static/img/samples/depth_Kinect.jpg' | prepend:site.baseurl }}" style="width:100%">
+  <img class="mySlides5" src="{{ '/static/img/samples/depth_Gaussian.jpg' | prepend:site.baseurl }}" style="width:100%">
+  <img class="mySlides5" src="{{ '/static/img/samples/depth_Poisson.jpg' | prepend:site.baseurl }}" style="width:100%">
+</div>
+
+<script>
+carousel("mySlides5", 0);
+</script>
+<br>
+
 
 <div class="row">
   <div class="col-xs-12">
