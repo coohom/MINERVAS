@@ -1,5 +1,5 @@
 function carousel(cls_name, myIndex) {
-    console.log(cls_name + myIndex)
+    // console.log(cls_name + myIndex)
     // var myIndex = 0
     var i;
     var x = document.getElementsByClassName(cls_name);
