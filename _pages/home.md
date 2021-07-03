@@ -99,6 +99,10 @@ In this paper, we present MINERVAS, a Massive INterior EnviRonments VirtuAl Synt
   </div>
 </div>
 
+MINERVAS system allows users to control the data generation pipeline via DSL. The DSL is designed with flexibility and ease of use. For flexibility, we build our DSL as an internal DSL under the Python programming language. For ease of use, we provide several common samplers for users to easily generate diverse scenes for domain randomization.
+
+Here we show some examples of our DSL and generated results. We only show the built-in samplers here. For more information about DSL, please read the <a href='TODO'>DSL Documentation</a>.
+
 <!-- **** Furniture arrangement sampler *** -->
 <div class="center">
   <div class="col-xs-12">
