@@ -212,10 +212,10 @@ carousel("mySlides3", 0);
 </script>
 
 
-<!-- **** Mesh sampler *** -->
+<!-- **** Model sampler *** -->
 <div class="center">
   <div class="col-xs-12">
-    <h3>Mesh sampler</h3>
+    <h3>Model sampler</h3>
   </div>
 </div>
 
