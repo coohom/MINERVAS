@@ -102,7 +102,7 @@ permalink: /
 
 <div class="row">
   <div class="col-xs-12">
-    We provide free trial for each user with limited scene and machine time. If you would like to use our system for research purpose, please send the <a href='TODO'>Terms of Use</a> to us at <a href="mailto:minervas@qunhemail.com" class="email" data-animate-hover="shake" data-animate="fadeInUp">MINERVAS Group<i class="fa fa-envelope"></i></a>. Once we receive your agreement form, our team would provide contact you.
+    We provide free trial acount for each user with limited scene and machine time. If you would like to use our system for research purpose, please send the <a href="{{ "/static/pdf/TOS.pdf" | prepend:site.baseurl }}">Terms of Use</a> to us at <a href="mailto:minervas@qunhemail.com" class="email" data-animate-hover="shake" data-animate="fadeInUp">MINERVAS Group<i class="fa fa-envelope"></i></a>. Once we receive your agreement form, our team would provide contact you.
   </div>
 </div><br>
 
