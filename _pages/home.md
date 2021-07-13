@@ -37,7 +37,7 @@ permalink: /
     </center>
     <br>
     <center>
-      <a href='https://arxiv.org/abs/'>arXiv</a> | <a href='https://www.kujiale.com/coohomcloud/minervas'>System</a> | <a href="https://coohom.github.io/cloud-docs/">Document</a>
+      <a href='https://arxiv.org/abs/'>arXiv</a> | <a href='https://www.kujiale.com/coohomcloud/minervas'>Online System</a> | <a href="https://coohom.github.io/cloud-docs/">Document</a>
     </center>
   </div>
 </div><br>
@@ -72,10 +72,10 @@ permalink: /
 <div class="row">
   <div class="col-xs-12">
     <p>
-      With the rapid development of data-driven techniques, data has played an important role in various computer vision tasks. Many realistic or synthetic datasets have been proposed to solve different problems. Notwithstanding this progress, challenges remain: (1) the creation of dataset is usually a tedious process with manual annotations, (2) most datasets are only designed for a single specific task, (3) the modification or randomization of 3D scenes is difficult, and (4) the release of commercial 3D datasets may encounter copyright issues.
+      With the rapid development of data-driven techniques, data has played an essential role in various computer vision tasks. Many realistic and synthetic datasets have been proposed to address different problems. However, there are lots of unresolved challenges: (1) the creation of dataset is usually a tedious process with manual annotations, (2) most datasets are only designed for a single specific task, (3) the modification or randomization of the 3D scene is difficult, and (4) the release of commercial 3D data may encounter copyright issue.
     </p>
     <p>
-      In this paper, we present MINERVAS, a Massive INterior EnviRonments VirtuAl Synthesis system, to facilitate the modification of 3D scenes and the generation of synthetic 2D images for various vision tasks. In particular, we design a programmable pipeline with Domain-Specific Language, allow users to (1) select interior scenes from the commercial scene database, (2) synthesize customized indoor scenes for different tasks, and (3) render various imagery data, such as visual color, geometric structures, semantic labels. Our system eases the difficulty of customizing massive numbers of scenes for different tasks and relieves users from manipulating fine-grained scene configurations by providing user-controllable randomness using multi-level samplers. Most importantly, it empowers users to access commercial scene databases with millions of indoor scenes, as well as protects the copyright of core data assets, <em>e.g.</em>, 3D CAD models. We demonstrate the validity and flexibility of our system by using our generated data to improve the performance on different kinds of computer vision tasks.
+      This paper presents MINERVAS, a Massive INterior EnviRonments VirtuAl Synthesis system, to facilitate the 3D scene modification and the 2D image synthesis for various vision tasks. In particular, we design a programmable pipeline with Domain-Specific Language, allowing users to (1) select scenes from the commercial indoor scene database, (2) synthesize scenes for different tasks with customized rules, and (3) render various imagery data, such as visual color, geometric structures, semantic label. Our system eases the difficulty of customizing massive numbers of scenes for different tasks and relieves users from manipulating fine-grained scene configurations by providing user-controllable randomness using multi-level samplers. Most importantly, it empowers users to access commercial scene databases with millions of indoor scenes and protects the copyright of core data assets, <em>e.g.</em>, 3D CAD models. We demonstrate the validity and flexibility of our system by using our synthesized data to improve the performance on different kinds of computer vision tasks.
     </p>
   </div>
 </div><br>
@@ -96,19 +96,19 @@ permalink: /
 
 <div class="row">
   <div class="col-xs-12">
-    <h2>System</h2>
+    <h2>Online System</h2>
   </div>
 </div>
 
 <div class="row">
   <div class="col-xs-12">
-    We provide free trial for each user. If you would like to use our system for research purpose, please send the <a href='TODO'>Terms of Use</a> to us at <a href="mailto:minervas@qunhemail.com" class="email" data-animate-hover="shake" data-animate="fadeInUp">MINERVAS Group<i class="fa fa-envelope"></i></a>. Once we receive your agreement form, our team would provide contact you.
+    We provide free trial for each user with limited scene and machine time. If you would like to use our system for research purpose, please send the <a href='TODO'>Terms of Use</a> to us at <a href="mailto:minervas@qunhemail.com" class="email" data-animate-hover="shake" data-animate="fadeInUp">MINERVAS Group<i class="fa fa-envelope"></i></a>. Once we receive your agreement form, our team would provide contact you.
   </div>
 </div><br>
 
 <div class="row">
   <div class="col-xs-12">
-    <h2>Samples</h2>
+    <h2>DSL Examples</h2>
   </div>
 </div>
 
@@ -282,9 +282,11 @@ carousel("mySlides5", 0);
 <div class="row">
   <div class="col-xs-12">
     <p>
-      We would like to thank Manycore Tech (Kujiale) for providing the 3D indoor scene database and the high-performance rendering platform, especially Coohom Cloud Team for technical support.
+      We would like to thank Manycore Tech (<a href="https://www.kujiale.com" target="_blank" rel="noopener noreferrer">Kujiale</a>) for providing the 3D indoor scene database and the high-performance rendering platform, especially <a target="_blank" href="https://coohomcloud.com/">Coohom Cloud</a> Team for technical support.
     </p>
   </div>
 </div><br>
 
 <hr>
+
+
