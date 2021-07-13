@@ -7,7 +7,6 @@ permalink: /
 ---
 <style> 
 .center{text-align:center} 
-/* .mySlides{display:none;} */
 </style> 
 
 <br>
@@ -102,7 +101,9 @@ permalink: /
 
 <div class="row">
   <div class="col-xs-12">
-    We provide free trial acount for each user with limited scene and machine time. If you would like to use our system for research purpose, please send the <a href="{{ "/static/pdf/TOS.pdf" | prepend:site.baseurl }}">Terms of Use</a> to us at <a href="mailto:minervas@qunhemail.com" class="email" data-animate-hover="shake" data-animate="fadeInUp">MINERVAS Group<i class="fa fa-envelope"></i></a>. Once we receive your agreement form, our team would provide contact you.
+    <p>
+      We provide a free trial account for each user with the limited scene and machine time. If you would like to use our system for research purposes, please send the <a href="{{ "/static/pdf/tos.pdf" | prepend:site.baseurl }}">Terms of Use</a> to <a href="mailto:minervas@qunhemail.com" class="email" data-animate-hover="shake" data-animate="fadeInUp">MINERVAS Group<i class="fa fa-envelope"></i></a>. Once we receive your agreement form, our team would provide contact you.
+    </p>
   </div>
 </div><br>
 
@@ -118,7 +119,7 @@ permalink: /
       MINERVAS system allows users to control the data generation pipeline via Domain Specific Language (DSL). The DSL is designed with flexibility and ease of use. For flexibility, we build our DSL as an internal DSL under the Python programming language. For ease of use, we provide several common samplers for users to easily generate diverse scenes for domain randomization.
     </p>
     <p>
-      Here we show some examples of our DSL and generated results. We only show the built-in samplers here. For more information about DSL, please read the <a href='https://coohom.github.io/cloud-docs/'>DSL Documentation</a>.
+      Here we show some examples of our DSL and generated results. We only show the built-in samplers here. For more information about DSL, please refer to <a href='https://coohom.github.io/cloud-docs/'>DSL Documentation</a>.
     </p>
   </div>
 </div><br>
@@ -126,12 +127,11 @@ permalink: /
 <!-- **** Furniture arrangement sampler *** -->
 <div class="center">
   <div class="col-xs-12">
-    <h3>Furniture rearrangment</h3>
+    <h3>Furniture Rearrangment</h3>
   </div>
 </div>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/atom-one-light.min.css">
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/default.min.css"> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
 <pre><code class="python">class FurnitureLayoutSampler(SceneProcessor):
@@ -156,7 +156,7 @@ carousel("mySlides", 0);
 <!-- **** Material sampler *** -->
 <div class="center">
   <div class="col-xs-12">
-    <h3>Material sampler</h3>
+    <h3>Material Sampler</h3>
   </div>
 </div>
 
@@ -185,7 +185,7 @@ carousel("mySlides2", 0);
 <!-- **** Light sampler *** -->
 <div class="center">
   <div class="col-xs-12">
-    <h3>Light sampler</h3>
+    <h3>Light Sampler</h3>
   </div>
 </div>
 
@@ -215,7 +215,7 @@ carousel("mySlides3", 0);
 <!-- **** Model sampler *** -->
 <div class="center">
   <div class="col-xs-12">
-    <h3>Model sampler</h3>
+    <h3>Model Sampler</h3>
   </div>
 </div>
 
