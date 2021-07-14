@@ -36,7 +36,7 @@ permalink: /
     </center>
     <br>
     <center>
-      <a href='https://arxiv.org/abs/2107.06149'>arXiv</a> | <a href="{{ "/static/pdf/supp.pdf" | prepend:site.baseurl }}">Supp</a> | <a href='https://www.kujiale.com/coohomcloud/minervas'>Online System</a> | <a href="https://coohom.github.io/cloud-docs/">Document</a>
+      <a href='https://arxiv.org/abs/2107.06149'>arXiv</a> | <a href='https://drive.google.com/file/d/1avGTr44sGrWx_jWiNYEIrp3R7jbNPOgj/view?usp=sharing'>Supp</a> | <a href='https://www.kujiale.com/coohomcloud#/online-system-tips'>Online System</a> | <a href="https://coohom.github.io/cloud-docs/">Document</a>
     </center>
   </div>
 </div><br>
@@ -282,11 +282,9 @@ carousel("mySlides5", 0);
 <div class="row">
   <div class="col-xs-12">
     <p>
-      We would like to thank Manycore Tech (<a href="https://coohomcloud.com/" target="_blank" rel="noopener noreferrer">Coohom Cloud</a>, <a href="https://www.kujiale.com.com/" target="_blank" rel="noopener noreferrer">Kujiale</a>) for providing the 3D indoor scene database and the high-performance rendering platform, especially <a target="_blank" href="">Coohom Cloud</a> Team for technical support.
+      We would like to thank Manycore Tech (<a href="https://coohomcloud.com/" target="_blank" rel="noopener noreferrer">Coohom Cloud</a>, <a href="https://www.kujiale.com/" target="_blank" rel="noopener noreferrer">Kujiale</a>) for providing the 3D indoor scene database and the high-performance rendering platform, especially Coohom Cloud Team for technical support.
     </p>
   </div>
 </div><br>
 
 <hr>
-
-
