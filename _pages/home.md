@@ -282,7 +282,7 @@ carousel("mySlides5", 0);
 <div class="row">
   <div class="col-xs-12">
     <p>
-      We would like to thank Manycore Tech (<a href="https://www.kujiale.com" target="_blank" rel="noopener noreferrer">Kujiale</a>) for providing the 3D indoor scene database and the high-performance rendering platform, especially <a target="_blank" href="https://coohomcloud.com/">Coohom Cloud</a> Team for technical support.
+      We would like to thank Manycore Tech (<a href="https://coohomcloud.com/" target="_blank" rel="noopener noreferrer">Coohom Cloud</a>, <a href="https://www.kujiale.com.com/" target="_blank" rel="noopener noreferrer">Kujiale</a>) for providing the 3D indoor scene database and the high-performance rendering platform, especially <a target="_blank" href="">Coohom Cloud</a> Team for technical support.
     </p>
   </div>
 </div><br>
