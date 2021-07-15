@@ -36,7 +36,7 @@ permalink: /
     </center>
     <br>
     <center>
-      <a href='https://arxiv.org/abs/2107.06149'>arXiv</a> | <a href='https://drive.google.com/file/d/1avGTr44sGrWx_jWiNYEIrp3R7jbNPOgj/view?usp=sharing'>Supp</a> | <a href='https://www.kujiale.com/coohomcloud#/online-system-tips'>Online System</a> | <a href="https://coohom.github.io/cloud-docs/">Document</a>
+      <a href='https://arxiv.org/abs/2107.06149'>arXiv</a> | <a href='https://drive.google.com/file/d/1avGTr44sGrWx_jWiNYEIrp3R7jbNPOgj/view?usp=sharing'>Supp</a> | <a href='https://www.kujiale.com/coohomcloud#/online-system-tips'>Online System</a> | <a href="https://coohom.github.io/cloud-docs/">Doc</a>
     </center>
   </div>
 </div><br>
@@ -71,24 +71,7 @@ permalink: /
 <div class="row">
   <div class="col-xs-12">
     <p>
-      With the rapid development of data-driven techniques, data has played an essential role in various computer vision tasks. Many realistic and synthetic datasets have been proposed to address different problems. However, there are lots of unresolved challenges: (1) the creation of dataset is usually a tedious process with manual annotations, (2) most datasets are only designed for a single specific task, (3) the modification or randomization of the 3D scene is difficult, and (4) the release of commercial 3D data may encounter copyright issue.
-    </p>
-    <p>
-      This paper presents MINERVAS, a Massive INterior EnviRonments VirtuAl Synthesis system, to facilitate the 3D scene modification and the 2D image synthesis for various vision tasks. In particular, we design a programmable pipeline with Domain-Specific Language, allowing users to (1) select scenes from the commercial indoor scene database, (2) synthesize scenes for different tasks with customized rules, and (3) render various imagery data, such as visual color, geometric structures, semantic label. Our system eases the difficulty of customizing massive numbers of scenes for different tasks and relieves users from manipulating fine-grained scene configurations by providing user-controllable randomness using multi-level samplers. Most importantly, it empowers users to access commercial scene databases with millions of indoor scenes and protects the copyright of core data assets, <em>e.g.</em>, 3D CAD models. We demonstrate the validity and flexibility of our system by using our synthesized data to improve the performance on different kinds of computer vision tasks.
-    </p>
-  </div>
-</div><br>
-
-<div class="row">
-  <div class="col-xs-12">
-    <h2>Video</h2>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-xs-12">
-    <p>
-    Comming soon.
+      With the rapid development of data-driven techniques, data has played an essential role in various computer vision tasks. Many realistic and synthetic datasets have been proposed to address different problems. However, there are lots of unresolved challenges: (1) the creation of dataset is usually a tedious process with manual annotations, (2) most datasets are only designed for a single specific task, (3) the modification or randomization of the 3D scene is difficult, and (4) the release of commercial 3D data may encounter copyright issue. This paper presents MINERVAS, a Massive INterior EnviRonments VirtuAl Synthesis system, to facilitate the 3D scene modification and the 2D image synthesis for various vision tasks. In particular, we design a programmable pipeline with Domain-Specific Language, allowing users to (1) select scenes from the commercial indoor scene database, (2) synthesize scenes for different tasks with customized rules, and (3) render various imagery data, such as visual color, geometric structures, semantic label. Our system eases the difficulty of customizing massive numbers of scenes for different tasks and relieves users from manipulating fine-grained scene configurations by providing user-controllable randomness using multi-level samplers. Most importantly, it empowers users to access commercial scene databases with millions of indoor scenes and protects the copyright of core data assets, <em>e.g.</em>, 3D CAD models. We demonstrate the validity and flexibility of our system by using our synthesized data to improve the performance on different kinds of computer vision tasks.
     </p>
   </div>
 </div><br>
@@ -102,7 +85,7 @@ permalink: /
 <div class="row">
   <div class="col-xs-12">
     <p>
-      We provide a free trial account for each user with the limited scene and machine time. If you would like to use our system for research purposes, please send the <a href="{{ "/static/pdf/tos.pdf" | prepend:site.baseurl }}">Terms of Use</a> to <a href="mailto:minervas@qunhemail.com" class="email" data-animate-hover="shake" data-animate="fadeInUp">MINERVAS Group<i class="fa fa-envelope"></i></a>. Once we receive your agreement form, our team would contact you.
+      We provide a free trial account for each user with the limited scene and machine time. If you would like to use our system for research purposes, please send the <a href="{{ "/static/pdf/tos.pdf" | prepend:site.baseurl }}">Terms of Use</a> to <a href="mailto:minervas@qunhemail.com" class="email" data-animate-hover="shake" data-animate="fadeInUp">MINERVAS Group<i class="fa fa-envelope"></i></a>. Once receiving the agreement form, our group will contact you.
     </p>
   </div>
 </div><br>
@@ -119,7 +102,7 @@ permalink: /
       MINERVAS system allows users to control the data generation pipeline via Domain Specific Language (DSL). The DSL is designed with flexibility and ease of use. For flexibility, we build our DSL as an internal DSL under the Python programming language. For ease of use, we provide several common samplers for users to easily generate diverse scenes for domain randomization.
     </p>
     <p>
-      Here we show some examples of our DSL and generated results. We only show the built-in samplers here. For more information about DSL, please refer to <a href='https://coohom.github.io/cloud-docs/'>DSL Documentation</a>.
+      Here we show some examples of our DSL and generated results. We only show the built-in samplers here. For more information about DSL, please refer to <a href='https://coohom.github.io/cloud-docs/'>Document</a>.
     </p>
   </div>
 </div><br>
