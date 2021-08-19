@@ -243,70 +243,7 @@ carousel("mySlides4", 0);
         # 2: PoissonNoiseModel
         # 3: SaltAndPepperNoiseModel
         # 4: KinectNoiseModel
-<<<<<<< HEAD
-        self.gen_depth(noise=1)
-
-class CustomTrajectorySampler(EntityProcessor):
-    def calculate_vel(self, velocity, step_time):
-        mu = glm.normalize(glm.vec3(np.random.normal(0, 1, size=3)))
-        FORCE = 100
-        f = FORCE * mu
-        PHI, A, C_D, M = 1.204, 0.09, 0.1, 1.0
-        d = -0.5 * glm.normalize(velocity) * PHI * A * C_D * glm.dot(velocity, velocity)
-        velocity = velocity + (d + f) * M * step_time
-        S_MAX = 10
-        if S_MAX < sqrt(glm.dot(velocity, velocity)):
-            velocity = S_MAX * glm.normalize(velocity)
-        return velocity
-    def process(self):
-        rooms = self.get_rooms()
-        for _, (cameraComp, trajectoryComp) in self.world.get_components(CameraComponent, TrajectoryComponent):
-            for room in rooms:
-                if room.id == cameraComp.id:
-                    room_polygon = room.get_polygon()
-                    room_height = room.get_height()
-                    room_centroid = glm.vec2(room_polygon.centroid.x, room_polygon.centroid.y)
-            # init
-            camera_vel = glm.normalize(glm.vec3(np.random.normal(0, 1, size=3)))
-            viewpoint_vel = glm.normalize(glm.vec3(np.random.normal(0, 1, size=3)))
-            camera_pos = glm.vec3(room_centroid, room_height / 2)
-            viewpoint_pos = glm.vec3(room_centroid, room_height/ 2)
-            # calcaulate road points
-            length_of_trajectory, delta_time, scale = 100, 0.03, 1000
-            for i in range(length_of_trajectory):
-                # Camera
-                camera_vel = self.calculate_vel(camera_vel, delta_time)
-                camera_vel.z = 0
-                new_position = camera_pos + scale * camera_vel * delta_time
-                next_camera_point = Point(tuple(new_position.xy))
-                if not next_camera_point.within(room_polygon):
-                    p1, p2 = nearest_points(room_polygon, next_camera_point)
-                    # print(p1, p2)
-                    normal = glm.normalize(glm.vec3(p1.x - p2.x, p1.y - p2.y, 0))
-                    camera_vel = glm.reflect(camera_vel, normal)
-                camera_pos = camera_pos + scale * camera_vel * delta_time
-                # View point
-                viewpoint_vel = self.calculate_vel(viewpoint_vel, delta_time)
-                new_position = viewpoint_pos + scale * viewpoint_vel * delta_time
-                viewpoint_point = Point(tuple(new_position.xy))
-                if not viewpoint_point.within(room_polygon):
-                    p1, p2 = nearest_points(room_polygon, viewpoint_point)
-                    # print(p1, p2)
-                    normal = glm.normalize(glm.vec3(p1.x - p2.x, p1.y - p2.y, 0))
-                    viewpoint_vel = glm.reflect(viewpoint_vel, normal)
-                if new_position.z < 0:
-                    viewpoint_vel = glm.reflect(viewpoint_vel, glm.vec3(0, 0, 1))
-                if new_position.z > room_height:
-                    viewpoint_vel = glm.reflect(viewpoint_vel, glm.vec3(0, 0, -1))
-                viewpoint_pos = viewpoint_pos + scale * viewpoint_vel * delta_time
-                worldUp = glm.normalize(glm.vec3(0.2 * (random.random() - 0.5), 
-                                                0.2 * (random.random() - 0.5), 1))
-                trajectoryComp.add_trajectory_node(tuple(camera_pos.xyz),
-                                                    tuple(viewpoint_pos.xyz),
-                                                    tuple(worldUp.xyz))
-=======
         self.gen_depth(noise=noise)
->>>>>>> e627b25c70079788647c51a633a96182bce5c30c
 </code></pre>
 
 <link rel="stylesheet" href="{{ '/static/css/w3.css' | prepend:site.baseurl }}">
