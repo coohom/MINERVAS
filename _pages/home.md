@@ -7,7 +7,6 @@ permalink: /
 ---
 <style> 
 .center{text-align:center} 
-/* .mySlides{display:none;} */
 </style> 
 
 <br>
@@ -29,7 +28,7 @@ permalink: /
     <br>
     <center>
       <sup>1</sup>State Key Laboratory of CAD &amp; CG, Zhejiang University,
-      <sup>2</sup>Manycore (Kujiale)
+      <sup>2</sup>Manycore Tech (Kujiale)
     </center>
     <br>
     <center>
@@ -37,7 +36,7 @@ permalink: /
     </center>
     <br>
     <center>
-      <a href='https://arxiv.org/abs/'>arXiv</a> | <a href='TODO'>Documentation</a> | <a href='https://www.kujiale.com/coohomcloud/minervas'>Online System</a>
+      <a href='https://arxiv.org/abs/2107.06149'>arXiv</a> | <a href='https://drive.google.com/file/d/1avGTr44sGrWx_jWiNYEIrp3R7jbNPOgj/view?usp=sharing'>Supp</a> | <a href='https://www.kujiale.com/coohomcloud#/online-system-tips'>Online System</a> | <a href="https://coohom.github.io/cloud-docs/">Doc</a>
     </center>
   </div>
 </div><br>
@@ -72,46 +71,53 @@ permalink: /
 <div class="row">
   <div class="col-xs-12">
     <p>
-With the rapid development of data-driven techniques, data has played an important role in various computer vision tasks. Many realistic or synthetic datasets have been proposed to solve different problems. Notwithstanding this progress, challenges remain: (1) the creation of dataset is usually a tedious process with manual annotations, (2) most datasets are only designed for a single specific task, (3) the modification or randomization of 3D scenes is difficult, and (4) the release of commercial 3D datasets may encounter copyright issues.
-
-In this paper, we present MINERVAS, a Massive INterior EnviRonments VirtuAl Synthesis system, to facilitate the modification of 3D scenes and the generation of synthetic 2D images for various vision tasks. In particular, we design a programmable pipeline with Domain-Specific Language, allow users to (1) select interior scenes from the commercial scene database, (2) synthesize customized indoor scenes for different tasks, and (3) render various imagery data, such as visual color, geometric structures, semantic labels. Our system eases the difficulty of customizing massive numbers of scenes for different tasks and relieves users from manipulating fine-grained scene configurations by providing user-controllable randomness using multi-level samplers. Most importantly, it empowers users to access commercial scene databases with millions of indoor scenes, as well as protects the copyright of core data assets, e.g., 3D CAD models. We demonstrate the validity and flexibility of our system by using our generated data to improve the performance on different kinds of computer vision tasks.
+      <center><iframe width="900" height="500" src="https://www.youtube.com/embed/wUUINjbLNG0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+    </p>
+    <p>
+      With the rapid development of data-driven techniques, data has played an essential role in various computer vision tasks. Many realistic and synthetic datasets have been proposed to address different problems. However, there are lots of unresolved challenges: (1) the creation of dataset is usually a tedious process with manual annotations, (2) most datasets are only designed for a single specific task, (3) the modification or randomization of the 3D scene is difficult, and (4) the release of commercial 3D data may encounter copyright issue. This paper presents MINERVAS, a Massive INterior EnviRonments VirtuAl Synthesis system, to facilitate the 3D scene modification and the 2D image synthesis for various vision tasks. In particular, we design a programmable pipeline with Domain-Specific Language, allowing users to (1) select scenes from the commercial indoor scene database, (2) synthesize scenes for different tasks with customized rules, and (3) render various imagery data, such as visual color, geometric structures, semantic label. Our system eases the difficulty of customizing massive numbers of scenes for different tasks and relieves users from manipulating fine-grained scene configurations by providing user-controllable randomness using multi-level samplers. Most importantly, it empowers users to access commercial scene databases with millions of indoor scenes and protects the copyright of core data assets, <em>e.g.</em>, 3D CAD models. We demonstrate the validity and flexibility of our system by using our synthesized data to improve the performance on different kinds of computer vision tasks.
     </p>
   </div>
 </div><br>
 
 <div class="row">
   <div class="col-xs-12">
-    <h2>Video</h2>
+    <h2>Online System</h2>
   </div>
 </div>
 
 <div class="row">
   <div class="col-xs-12">
     <p>
-    Comming soon.
+      We provide a free trial account for each user with the limited scene and machine time. If you would like to use our system for research purposes, please send the <a href="{{ "/static/pdf/tos.pdf" | prepend:site.baseurl }}">Terms of Use</a> to <a href="mailto:minervas@qunhemail.com" class="email" data-animate-hover="shake" data-animate="fadeInUp">MINERVAS Group<i class="fa fa-envelope"></i></a>. Once receiving the agreement form, our group will contact you.
     </p>
   </div>
 </div><br>
 
 <div class="row">
   <div class="col-xs-12">
-    <h2>Samples</h2>
+    <h2>DSL Examples</h2>
   </div>
 </div>
 
-MINERVAS system allows users to control the data generation pipeline via DSL. The DSL is designed with flexibility and ease of use. For flexibility, we build our DSL as an internal DSL under the Python programming language. For ease of use, we provide several common samplers for users to easily generate diverse scenes for domain randomization.
-
-Here we show some examples of our DSL and generated results. We only show the built-in samplers here. For more information about DSL, please read the <a href='TODO'>DSL Documentation</a>.
+<div class="row">
+  <div class="col-xs-12">
+    <p>
+      MINERVAS system allows users to control the data generation pipeline via Domain Specific Language (DSL). The DSL is designed with flexibility and ease of use. For flexibility, we build our DSL as an internal DSL under the Python programming language. For ease of use, we provide several common samplers for users to easily generate diverse scenes for domain randomization.
+    </p>
+    <p>
+      Here we show some examples of our DSL and generated results. We only show the built-in samplers here. For more information about DSL, please refer to <a href='https://coohom.github.io/cloud-docs/'>Document</a>.
+    </p>
+  </div>
+</div><br>
 
 <!-- **** Furniture arrangement sampler *** -->
 <div class="center">
   <div class="col-xs-12">
-    <h3>Furniture rearrangment</h3>
+    <h3>Furniture Rearrangment</h3>
   </div>
 </div>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/atom-one-light.min.css">
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/default.min.css"> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
 <pre><code class="python">class FurnitureLayoutSampler(SceneProcessor):
@@ -136,7 +142,7 @@ carousel("mySlides", 0);
 <!-- **** Material sampler *** -->
 <div class="center">
   <div class="col-xs-12">
-    <h3>Material sampler</h3>
+    <h3>Material Sampler</h3>
   </div>
 </div>
 
@@ -165,7 +171,7 @@ carousel("mySlides2", 0);
 <!-- **** Light sampler *** -->
 <div class="center">
   <div class="col-xs-12">
-    <h3>Light sampler</h3>
+    <h3>Light Sampler</h3>
   </div>
 </div>
 
@@ -195,7 +201,7 @@ carousel("mySlides3", 0);
 <!-- **** Model sampler *** -->
 <div class="center">
   <div class="col-xs-12">
-    <h3>Model sampler</h3>
+    <h3>Model Sampler</h3>
   </div>
 </div>
 
@@ -237,6 +243,7 @@ carousel("mySlides4", 0);
         # 2: PoissonNoiseModel
         # 3: SaltAndPepperNoiseModel
         # 4: KinectNoiseModel
+<<<<<<< HEAD
         self.gen_depth(noise=1)
 
 class CustomTrajectorySampler(EntityProcessor):
@@ -297,6 +304,9 @@ class CustomTrajectorySampler(EntityProcessor):
                 trajectoryComp.add_trajectory_node(tuple(camera_pos.xyz),
                                                     tuple(viewpoint_pos.xyz),
                                                     tuple(worldUp.xyz))
+=======
+        self.gen_depth(noise=noise)
+>>>>>>> e627b25c70079788647c51a633a96182bce5c30c
 </code></pre>
 
 <link rel="stylesheet" href="{{ '/static/css/w3.css' | prepend:site.baseurl }}">
@@ -312,7 +322,6 @@ carousel("mySlides5", 0);
 </script>
 <br>
 
-
 <div class="row">
   <div class="col-xs-12">
     <h2>Acknowledgements</h2>
@@ -322,7 +331,7 @@ carousel("mySlides5", 0);
 <div class="row">
   <div class="col-xs-12">
     <p>
-      We would like to thank Manycore (Kujiale) for providing the 3D indoor scene database and the high-performance rendering platform, especially Coohom Cloud Team for technical support.
+      We would like to thank Manycore Tech (<a href="https://coohomcloud.com/" target="_blank" rel="noopener noreferrer">Coohom Cloud</a>, <a href="https://www.kujiale.com/" target="_blank" rel="noopener noreferrer">Kujiale</a>) for providing the 3D indoor scene database and the high-performance rendering platform, especially Coohom Cloud Team for technical support.
     </p>
   </div>
 </div><br>
