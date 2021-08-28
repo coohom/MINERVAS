@@ -25,4 +25,20 @@ permalink: /review
   </div>
 </div><br>
 
+<div class="row">
+  <div class="col-xs-12">
+    <h2>Demo scene of the prototype system</h2>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+    <p>
+      Due the size constaint of the supplementary material in the submission system, we move the demo scene of the prototype system 
+      <a href='https://drive.google.com/file/d/1C0225d3qFax_DyVirMig556P-WjK3_n8/view?usp=sharing'>here</a>
+      for download.
+    </p>
+  </div>
+</div><br>
+
 <hr>

@@ -123,7 +123,8 @@ permalink: /
 <pre><code class="python">class FurnitureLayoutSampler(SceneProcessor):
   def process(self):
       for room in self.shader.world.rooms:
-          room.randomize_layout(self.shader.world)
+          if instance.type == 'ASSET':
+              room.randomize_layout(self.shader.world)
 </code></pre>
 
 <link rel="stylesheet" href="{{ '/static/css/w3.css' | prepend:site.baseurl }}">
@@ -152,7 +153,7 @@ carousel("mySlides", 0);
 <pre><code class="python">class MaterialSampler(EntityProcessor):
     def process(self):
         for instance in self.shader.world.instances:
-            if instance.label_name in ['chair', 'desk']:
+            if instance.label in [247, 894]: # 247: 'char', 894: 'desk'
                 self.shader.world.replace_material(id=instance.id)
 </code></pre>
 
