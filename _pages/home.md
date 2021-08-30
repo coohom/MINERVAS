@@ -123,8 +123,7 @@ permalink: /
 <pre><code class="python">class FurnitureLayoutSampler(SceneProcessor):
   def process(self):
       for room in self.shader.world.rooms:
-          if instance.type == 'ASSET':
-              room.randomize_layout(self.shader.world)
+          room.randomize_layout(self.shader.world)
 </code></pre>
 
 <link rel="stylesheet" href="{{ '/static/css/w3.css' | prepend:site.baseurl }}">
@@ -153,7 +152,7 @@ carousel("mySlides", 0);
 <pre><code class="python">class MaterialSampler(EntityProcessor):
     def process(self):
         for instance in self.shader.world.instances:
-            if instance.label in [247, 894]: # 247: 'char', 894: 'desk'
+            if instance.label in [247, 894]: # 247: 'chair', 894: 'desk'
                 self.shader.world.replace_material(id=instance.id)
 </code></pre>
 
@@ -182,8 +181,9 @@ carousel("mySlides2", 0);
 <pre><code class="python">class LightSampler(EntityProcessor):
     def process(self):
         for light in self.shader.world.lights:
-            light.tune_temp() # randomize color temperature
-            light.tune_intensity() # randomize intensity
+            light._tune_temp(1) # randomize color temperature
+            light.tune_intensity(1) # randomize intensity
+            light.tune_random(1.2) # randomize intensity
 </code></pre>
 
 <link rel="stylesheet" href="{{ '/static/css/w3.css' | prepend:site.baseurl }}">
@@ -212,7 +212,8 @@ carousel("mySlides3", 0);
 <pre><code class="python">class ModelSampler(EntityProcessor):
     def process(self):
         for instance in self.shader.world.instances:
-            self.shader.world.replace_model(id=instance.id)
+            if instance.type == 'ASSET':
+                self.shader.world.replace_model(id=instance.id)
 </code></pre>
 
 <link rel="stylesheet" href="{{ '/static/css/w3.css' | prepend:site.baseurl }}">
@@ -238,13 +239,13 @@ carousel("mySlides4", 0);
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
 <pre><code class="python">class DepthNoiseSample(PixelProcessor):
-    def process(self, noise):
+    def process(self):
         # 0: NoNoiseModel
         # 1: GaussianNoiseModel
         # 2: PoissonNoiseModel
         # 3: SaltAndPepperNoiseModel
         # 4: KinectNoiseModel
-        self.gen_depth(noise=noise)
+        self.gen_depth(noise=4)
 </code></pre>
 
 <link rel="stylesheet" href="{{ '/static/css/w3.css' | prepend:site.baseurl }}">
