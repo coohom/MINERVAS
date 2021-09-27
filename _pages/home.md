@@ -89,7 +89,7 @@ permalink: /
 <div class="row">
   <div class="col-xs-12">
     <p>
-      We provide a free trial account for each user with the limited scene and machine time. If you would like to use our system for research purposes, please send the <a href="{{ "/static/pdf/tos.pdf" | prepend:site.baseurl }}">Terms of Use</a> to <a href="mailto:minervas@qunhemail.com" class="email" data-animate-hover="shake" data-animate="fadeInUp">MINERVAS Group<i class="fa fa-envelope"></i></a>. Once receiving the agreement form, our group will contact you.
+      We provide a free trial account for each user with the limited scene and machine time, you can sign up <a href='https://www.kujiale.com/coohomcloud/minervas#/register'>here</a>. If you would like to use our system for research purposes, please send the <a href="{{ "/static/pdf/tos.pdf" | prepend:site.baseurl }}">Terms of Use</a> to <a href="mailto:minervas@qunhemail.com" class="email" data-animate-hover="shake" data-animate="fadeInUp">MINERVAS Group<i class="fa fa-envelope"></i></a>. Once receiving the agreement form, our group will contact you.
     </p>
   </div>
 </div><br>
