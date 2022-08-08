@@ -17,18 +17,19 @@ permalink: /
     </center>
     <br>
     <center>
-      Haocheng Ren<sup>1,*</sup>,
-      Hao Zhang<sup>1,*</sup>,
+      Haocheng Ren<sup>1*</sup>,
+      Hao Zhang<sup>1*</sup>,
       <a href="https://bertjiazheng.github.io/">Jia Zheng</a><sup>2</sup>,
       Jiaxiang Zheng<sup>2</sup>,
       <a href="http://scholar.google.com/citations?user=dwvfKSkAAAAJ&hl=en">Rui Tang</a><sup>2</sup>,
       <a href="http://www.cad.zju.edu.cn/home/rwang/">Rui Wang</a><sup>1</sup>,
+      Yuchi Huo<sup>1</sup>,
       <a href="http://www.cad.zju.edu.cn/home/bao/">Hujun Bao</a><sup>1</sup>
     </center>
     <br>
     <center>
       <sup>1</sup>State Key Laboratory of CAD &amp; CG, Zhejiang University,
-      <sup>2</sup>Manycore Tech (Kujiale)
+      <sup>2</sup>Manycore Tech Inc. (Kujiale.com)
     </center>
     <br>
     <center>
@@ -271,7 +272,7 @@ carousel("mySlides5", 0);
 <div class="row">
   <div class="col-xs-12">
     <p>
-      We would like to thank Manycore Tech (<a href="https://coohomcloud.com/" target="_blank" rel="noopener noreferrer">Coohom Cloud</a>, <a href="https://www.kujiale.com/" target="_blank" rel="noopener noreferrer">Kujiale</a>) for providing the 3D indoor scene database and the high-performance rendering platform, especially Coohom Cloud Team for technical support.
+      We would like to thank Manycore Tech Inc. (<a href="https://coohomcloud.com/" target="_blank" rel="noopener noreferrer">Coohom Cloud</a>, <a href="https://www.kujiale.com/" target="_blank" rel="noopener noreferrer">Kujiale</a>) for providing the 3D indoor scene database and the high-performance rendering platform, especially Coohom Cloud Team for technical support.
     </p>
   </div>
 </div><br>
