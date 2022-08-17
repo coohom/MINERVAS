@@ -57,6 +57,7 @@ permalink: /
 <div class="row">
   <div class="col-xs-12">
     <ul>
+      <li>2022-08: The MINERVAS System is conditionally accepted to Pacific Graphics 2022!</li>
       <li>2021-07: The MINERVAS System is available online!</li>
     </ul>
   </div>
