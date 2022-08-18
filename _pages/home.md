@@ -22,9 +22,9 @@ permalink: /
       <a href="https://bertjiazheng.github.io/">Jia Zheng</a><sup>2</sup>,
       Jiaxiang Zheng<sup>2</sup>,
       <a href="http://scholar.google.com/citations?user=dwvfKSkAAAAJ&hl=en">Rui Tang</a><sup>2</sup>,
-      <a href="http://www.cad.zju.edu.cn/home/rwang/">Rui Wang</a><sup>1</sup>,
       Yuchi Huo<sup>1</sup>,
-      <a href="http://www.cad.zju.edu.cn/home/bao/">Hujun Bao</a><sup>1</sup>
+      <a href="http://www.cad.zju.edu.cn/home/bao/">Hujun Bao</a><sup>1</sup>,
+      <a href="http://www.cad.zju.edu.cn/home/rwang/">Rui Wang</a><sup>1</sup>
     </center>
     <br>
     <center>
@@ -57,7 +57,7 @@ permalink: /
 <div class="row">
   <div class="col-xs-12">
     <ul>
-      <li>2022-08: The MINERVAS System is conditionally accepted to Pacific Graphics 2022!</li>
+      <li>2022-08: The MINERVAS System is accepted to Computer Graphics Forum, Pacific Graphics 2022!</li>
       <li>2021-07: The MINERVAS System is available online!</li>
     </ul>
   </div>
